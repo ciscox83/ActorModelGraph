@@ -1,0 +1,27 @@
+<project>
+    <groupId>cs.actormodel.test</groupId>
+    <artifactId>actormodel-graph-maven-plugin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>cs.actormodel</groupId>
+            <artifactId>actormodel-graph-maven-plugin</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>cs.actormodel</groupId>
+                <artifactId>actormodel-graph-maven-plugin</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <configuration>
+                    <outputPath>target/actor_model_graph.txt</outputPath>
+                    <inputPackage>.</inputPackage>
+                    <project implementation="cs.actormodel.java.TestMavenProjectStub"/>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

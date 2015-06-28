@@ -45,11 +45,14 @@
         <java.version>1.8</java.version>
         <maven-core.version>3.3.3</maven-core.version>
         <maven-plugin-api.version>3.3.3</maven-plugin-api.version>
-        <maven-plugin-annotations.version>3.3</maven-plugin-annotations.version>
-        <maven-plugin-tools-api.version>3.3</maven-plugin-tools-api.version>
+        <maven-plugin-annotations.version>3.4</maven-plugin-annotations.version>
+        <maven-plugin-tools-api.version>3.4</maven-plugin-tools-api.version>
         <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
-        <maven-plugin-plugin.version>3.3</maven-plugin-plugin.version>
+        <maven-plugin-plugin.version>3.4</maven-plugin-plugin.version>
         <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
+        <maven-plugin-testing-harness.version>3.3.0</maven-plugin-testing-harness.version>
+        <maven-compat.version>3.3.3</maven-compat.version>
+        <maven-project.version>3.0-alpha-2</maven-project.version>
     </properties>
     <dependencies>
         <!-- Scala Library -->
@@ -69,6 +72,12 @@
             <groupId>org.clapper</groupId>
             <artifactId>classutil_2.10</artifactId>
             <version>1.0.5</version>
+        </dependency>
+        <!-- Commons io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
         </dependency>
         <!-- Maven Core -->
         <dependency>
@@ -94,6 +103,13 @@
             <groupId>org.apache.maven.plugin-tools</groupId>
             <artifactId>maven-plugin-tools-api</artifactId>
             <version>${maven-plugin-tools-api.version}</version>
+        </dependency>
+        <!-- Maven compat -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-compat</artifactId>
+            <version>${maven-compat.version}</version>
+            <scope>test</scope>
         </dependency>
         <!-- JUnit -->
         <dependency>
@@ -121,13 +137,26 @@
             <artifactId>maven-dependency-plugin</artifactId>
             <version>${maven-dependency-plugin.version}</version>
         </dependency>
+        <!-- Maven Project -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-project</artifactId>
+            <version>${maven-project.version}</version>
+        </dependency>
+        <!-- Maven Test -->
+        <dependency>
+            <groupId>org.apache.maven.plugin-testing</groupId>
+            <artifactId>maven-plugin-testing-harness</artifactId>
+            <version>${maven-plugin-testing-harness.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <!-- Define the plugin itself -->
             <plugin>
-                <groupId>somegroupid</groupId>
+                <groupId>cs.actormodel</groupId>
                 <artifactId>actormodel-graph-maven-plugin</artifactId>
                 <version>${project.version}</version>
             </plugin>

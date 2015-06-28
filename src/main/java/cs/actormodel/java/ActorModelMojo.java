@@ -17,20 +17,19 @@ import org.apache.maven.project.MavenProject;
 
 import cs.actormodel.scala.ActorModelGenerator;
 
-/**
- * @requiresDependencyResolution compile
- */
 @Mojo(name = "uml",
-        requiresDependencyResolution = ResolutionScope.COMPILE,
+        requiresDependencyResolution = ResolutionScope.RUNTIME,
         requiresProject = true)
 public class ActorModelMojo extends AbstractMojo {
-    @Parameter(defaultValue = "${project}", readonly = true)
+    public static final String DEFAULT_OUTPUT_PATH = "target/actor_model_graph.txt";
+
+    @Parameter(defaultValue = "${project}", readonly = true, required = true)
     private MavenProject project;
 
     @Parameter(property = "uml.inputPackage", defaultValue = ".")
     private String inputPackage;
 
-    @Parameter(property = "uml.outputPath", defaultValue = "target/actor_model_graph.txt")
+    @Parameter(property = "uml.outputPath", defaultValue = DEFAULT_OUTPUT_PATH)
     private String outputPath;
 
     @Override
