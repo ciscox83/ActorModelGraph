@@ -4,7 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <packaging>maven-plugin</packaging>
-    <description></description>
+    <description>
+        Maven plugin which provides some custom annotations
+        to generate a graphical representation of an application Actor model.
+    </description>
 
     <groupId>cs.actormodel</groupId>
     <artifactId>actormodel-graph-maven-plugin</artifactId>
