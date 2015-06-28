@@ -1,4 +1,4 @@
-package my.place.java;
+package cs.actormodel.java;
 
 final public class Empty {
 }

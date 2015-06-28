@@ -1,4 +1,4 @@
-package my.place.java;
+package cs.actormodel.java;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -15,7 +15,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.project.MavenProject;
 
-import my.place.scala.ActorModelGenerator;
+import cs.actormodel.scala.ActorModelGenerator;
 
 /**
  * @requiresDependencyResolution compile
@@ -30,7 +30,7 @@ public class ActorModelMojo extends AbstractMojo {
     @Parameter(property = "uml.inputPackage", defaultValue = ".")
     private String inputPackage;
 
-    @Parameter(property = "uml.outputPath", defaultValue = "target/actor_model_example.txt")
+    @Parameter(property = "uml.outputPath", defaultValue = "target/actor_model_graph.txt")
     private String outputPath;
 
     @Override

@@ -1,4 +1,4 @@
-package my.place.java;
+package cs.actormodel.java;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,12 +9,12 @@ import java.nio.file.Paths;
 
 import org.junit.Test;
 
-import my.place.scala.ActorModelGenerator;
+import cs.actormodel.scala.ActorModelGenerator;
 
 public class ActorModelGeneratorJavaTest {
 
     private final String OUTPUT_PATH = "target/java_model.txt";
-    private final String INPUT_PACKAGE = "my.place.java";
+    private final String INPUT_PACKAGE = "cs.actormodel.java";
 
     private final String expected_output = getExpectedOutput();
 

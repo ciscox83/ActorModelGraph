@@ -40,9 +40,6 @@
     </licenses>
 
     <properties>
-        <!-- Mojo Configs -->
-        <actormodel-graph-maven-plugin.inputPackage>my.place.java</actormodel-graph-maven-plugin.inputPackage>
-        <actormodel-graph-maven-plugin.outputPath>target/java_model.txt</actormodel-graph-maven-plugin.outputPath>
         <!-- Dependencies version -->
         <scala.version>2.10.5</scala.version>
         <java.version>1.8</java.version>
@@ -133,10 +130,6 @@
                 <groupId>somegroupid</groupId>
                 <artifactId>actormodel-graph-maven-plugin</artifactId>
                 <version>${project.version}</version>
-                <configuration>
-                    <outputPath>${actormodel-graph-maven-plugin.outputPath}</outputPath>
-                    <inputPackage>${actormodel-graph-maven-plugin.inputPackage}</inputPackage>
-                </configuration>
             </plugin>
             <!-- Maven plugin plugin -->
             <plugin>

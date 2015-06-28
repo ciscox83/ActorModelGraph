@@ -1,4 +1,4 @@
-package my.place.java;
+package cs.actormodel.java;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

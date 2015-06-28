@@ -1,10 +1,10 @@
-package my.place.scala
+package cs.actormodel.scala
 
 import java.io.{BufferedWriter, File, FileWriter}
 import java.net.URLClassLoader
 
 import com.typesafe.scalalogging.slf4j.Logger
-import my.place.java.{ActorModel, Empty}
+import cs.actormodel.java.{Empty, ActorModel}
 import org.clapper.classutil.ClassFinder
 import org.slf4j.LoggerFactory
 

@@ -1,6 +1,6 @@
-package my.place.scala.model
+package cs.actormodel.scala.model
 
-import my.place.java.ActorModel
+import cs.actormodel.java.ActorModel
 
 @ActorModel(parent = classOf[FooParent], children = Array(classOf[FooChild1], classOf[FooChild2]))
 class Foo {
