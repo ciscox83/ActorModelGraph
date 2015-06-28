@@ -8,8 +8,6 @@ import cs.actormodel.java.{Empty, ActorModel}
 import org.clapper.classutil.ClassFinder
 import org.slf4j.LoggerFactory
 
-import scala.reflect.runtime.{universe => ru}
-
 object ActorModelGenerator {
   val logger = Logger(LoggerFactory.getLogger(ActorModelGenerator.getClass.getSimpleName))
 
