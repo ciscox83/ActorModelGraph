@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
+import org.junit.Test;
 
 public class ActorModelMojoTest extends AbstractMojoTestCase {
 
@@ -22,7 +23,8 @@ public class ActorModelMojoTest extends AbstractMojoTestCase {
         Files.deleteIfExists(Paths.get(ActorModelMojo.DEFAULT_OUTPUT_PATH));
     }
 
-    public void testSchemaListInputOption() throws Exception {
+    @Test
+    public void testMojo() throws Exception {
         assertFalse(Files.exists(Paths.get(ActorModelMojo.DEFAULT_OUTPUT_PATH)));
         ActorModelMojo mojo = (ActorModelMojo) lookupMojo(GOAL, TEST_POM_PATH);
         mojo.execute();
