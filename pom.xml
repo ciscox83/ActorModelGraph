@@ -6,7 +6,7 @@
     <packaging>maven-plugin</packaging>
     <name>Actor Model Graph</name>
     <description>
-        Maven plugin which that through some custom annotations
+        Maven plugin that through some custom annotations
         allows to generate a graphical UML representation of an application Actor model.
     </description>
     <url>https://github.com/ciscox83/ActorModelGraph</url>
