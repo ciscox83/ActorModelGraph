@@ -12,7 +12,7 @@
     <url>https://github.com/ciscox83/ActorModelGraph</url>
 
     <groupId>cs.actormodel</groupId>
-    <artifactId>actormodel-graph-maven-plugin</artifactId>
+    <artifactId>gactor-maven-plugin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <licenses>
@@ -42,7 +42,7 @@
     </prerequisites>
 
     <properties>
-        <maven-plugin-plugin.goalPrefix>actormodel-graph</maven-plugin-plugin.goalPrefix>
+        <maven-plugin-plugin.goalPrefix>gactor</maven-plugin-plugin.goalPrefix>
         <!-- Dependencies version -->
         <scala.version>2.10.5</scala.version>
         <java.version>1.8</java.version>
@@ -160,7 +160,7 @@
             <!-- Define the plugin itself -->
             <plugin>
                 <groupId>cs.actormodel</groupId>
-                <artifactId>actormodel-graph-maven-plugin</artifactId>
+                <artifactId>gactor-maven-plugin</artifactId>
                 <version>${project.version}</version>
             </plugin>
             <!-- Maven plugin plugin -->
