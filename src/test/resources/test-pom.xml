@@ -1,11 +1,11 @@
 <project>
-    <groupId>cs.actormodel.test</groupId>
+    <groupId>it.cs.actormodel.test</groupId>
     <artifactId>gactor-maven-plugin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
-            <groupId>cs.actormodel</groupId>
+            <groupId>it.cs.actormodel</groupId>
             <artifactId>gactor-maven-plugin</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -13,13 +13,13 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>cs.actormodel</groupId>
+                <groupId>it.cs.actormodel</groupId>
                 <artifactId>gactor-maven-plugin</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
                 <configuration>
                     <outputPath>target/actor_model_graph.txt</outputPath>
                     <inputPackage>.</inputPackage>
-                    <project implementation="cs.actormodel.java.TestMavenProjectStub"/>
+                    <project implementation="it.cs.actormodel.java.TestMavenProjectStub"/>
                 </configuration>
             </plugin>
         </plugins>
