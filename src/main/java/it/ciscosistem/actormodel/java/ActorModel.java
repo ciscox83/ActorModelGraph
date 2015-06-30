@@ -1,4 +1,4 @@
-package it.cs.actormodel.java;
+package it.ciscosistem.actormodel.java;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

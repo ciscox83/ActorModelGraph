@@ -11,7 +11,7 @@
     </description>
     <url>https://github.com/ciscox83/ActorModelGraph</url>
 
-    <groupId>it.cs.actormodel</groupId>
+    <groupId>it.ciscosistem.actormodel</groupId>
     <artifactId>gactor-maven-plugin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -159,7 +159,7 @@
         <plugins>
             <!-- Define the plugin itself -->
             <plugin>
-                <groupId>it.cs.actormodel</groupId>
+                <groupId>it.ciscosistem.actormodel</groupId>
                 <artifactId>gactor-maven-plugin</artifactId>
                 <version>${project.version}</version>
             </plugin>

@@ -1,11 +1,11 @@
-package it.cs.actormodel.scala
+package it.ciscosistem.actormodel.scala
 
 import java.io.{BufferedWriter, File, FileWriter}
 import java.net.URLClassLoader
 
 import com.typesafe.scalalogging.slf4j.Logger
-import it.cs.actormodel.java.Empty
-import it.cs.actormodel.java.{Empty, ActorModel}
+import it.ciscosistem.actormodel.java.{ActorModel, Empty}
+import it.ciscosistem.actormodel.java.Empty
 import org.clapper.classutil.ClassFinder
 import org.slf4j.LoggerFactory
 

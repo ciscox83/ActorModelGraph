@@ -1,4 +1,4 @@
-package it.cs.actormodel.java;
+package it.ciscosistem.actormodel.java;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -15,7 +15,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.project.MavenProject;
 
-import it.cs.actormodel.scala.ActorModelGenerator;
+import it.ciscosistem.actormodel.scala.ActorModelGenerator;
 
 @Mojo(name = "uml",
         requiresDependencyResolution = ResolutionScope.RUNTIME,

@@ -1,4 +1,4 @@
-package it.cs.actormodel.java;
+package it.ciscosistem.actormodel.java;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,12 +9,12 @@ import java.nio.file.Paths;
 
 import org.junit.Test;
 
-import it.cs.actormodel.scala.ActorModelGenerator;
+import it.ciscosistem.actormodel.scala.ActorModelGenerator;
 
 public class ActorModelGeneratorJavaTest {
 
     private final String OUTPUT_PATH = "target/java_model.txt";
-    private final String INPUT_PACKAGE = "it.cs.actormodel.java";
+    private final String INPUT_PACKAGE = "it.ciscosistem.actormodel.java";
 
     private final String expected_output = getExpectedOutput();
 

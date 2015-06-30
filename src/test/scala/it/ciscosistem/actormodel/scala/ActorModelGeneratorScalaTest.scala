@@ -1,8 +1,8 @@
-package it.cs.actormodel.scala
+package it.ciscosistem.actormodel.scala
 
 import java.net.URLClassLoader
 
-import it.cs.actormodel.scala.ActorModelGeneratorScalaTest.{InputPackage, OutputPath, expected_output}
+import it.ciscosistem.actormodel.scala.ActorModelGeneratorScalaTest.{InputPackage, OutputPath, expected_output}
 import org.scalatest.FunSuite
 
 import scala.io.Source.fromFile
@@ -22,7 +22,7 @@ class ActorModelGeneratorScalaTest extends FunSuite {
 
 object ActorModelGeneratorScalaTest {
   val OutputPath = "target/scala_model.txt"
-  val InputPackage = "it.cs.actormodel.scala"
+  val InputPackage = "it.ciscosistem.actormodel.scala"
 
   val expected_output =
     """@startuml
