@@ -1,4 +1,4 @@
-package it.ciscosistem.actormodel.java;
+package it.ciscosistem.actormodel;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -19,7 +19,7 @@
                 <configuration>
                     <outputPath>target/actor_model_graph.txt</outputPath>
                     <inputPackage>.</inputPackage>
-                    <project implementation="it.ciscosistem.actormodel.java.TestMavenProjectStub"/>
+                    <project implementation="it.ciscosistem.actormodel.TestMavenProjectStub"/>
                 </configuration>
             </plugin>
         </plugins>

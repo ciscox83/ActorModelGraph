@@ -1,4 +1,4 @@
-package it.ciscosistem.actormodel.java;
+package it.ciscosistem.actormodel;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -15,12 +15,10 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.project.MavenProject;
 
-import it.ciscosistem.actormodel.scala.ActorModelGenerator;
-
 @Mojo(name = "uml",
         requiresDependencyResolution = ResolutionScope.RUNTIME,
         requiresProject = true)
-public class ActorModelMojo extends AbstractMojo {
+public class ActorModelUmlMojo extends AbstractMojo {
     public static final String DEFAULT_OUTPUT_PATH = "target/actor_model_graph.txt";
 
     @Parameter(defaultValue = "${project}", readonly = true, required = true)

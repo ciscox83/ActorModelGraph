@@ -1,4 +1,4 @@
-package it.ciscosistem.actormodel.java;
+package it.ciscosistem.actormodel;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,17 +9,15 @@ import java.nio.file.Paths;
 
 import org.junit.Test;
 
-import it.ciscosistem.actormodel.scala.ActorModelGenerator;
-
 public class ActorModelGeneratorJavaTest {
 
     private final String OUTPUT_PATH = "target/java_model.txt";
-    private final String INPUT_PACKAGE = "it.ciscosistem.actormodel.java";
+    private final String INPUT_PACKAGE = "it.ciscosistem.actormodel.javaExample";
 
     private final String expected_output = getExpectedOutput();
 
     @Test
-    public void simpleTest() throws IOException {
+    public void canGenerateCorrectUml() throws IOException {
         ActorModelGenerator.generate(INPUT_PACKAGE, OUTPUT_PATH, getContextClassLoader());
         String actual_output = new String(Files.readAllBytes(Paths.get(OUTPUT_PATH)));
         assertEquals(expected_output, actual_output);

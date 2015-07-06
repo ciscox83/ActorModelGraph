@@ -1,8 +1,8 @@
-package it.ciscosistem.actormodel.scala
+package it.ciscosistem.actormodel
 
 import java.net.URLClassLoader
 
-import it.ciscosistem.actormodel.scala.ActorModelGeneratorScalaTest.{InputPackage, OutputPath, expected_output}
+import it.ciscosistem.actormodel.ActorModelGeneratorScalaTest.{InputPackage, OutputPath, expected_output}
 import org.scalatest.FunSuite
 
 import scala.io.Source.fromFile
