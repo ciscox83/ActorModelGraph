@@ -12,7 +12,7 @@
     <url>https://github.com/ciscox83/ActorModelGraph</url>
 
     <groupId>it.ciscosistem.actormodel</groupId>
-    <artifactId>gactor-maven-plugin</artifactId>
+    <artifactId>gactor-maven-plugin_2.10</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <licenses>
@@ -42,10 +42,12 @@
     </prerequisites>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-plugin-plugin.goalPrefix>gactor</maven-plugin-plugin.goalPrefix>
         <!-- Dependencies version -->
         <scala.version>2.10.5</scala.version>
-        <java.version>1.8</java.version>
+        <java.source.version>1.6</java.source.version>
+        <java.target.version>1.6</java.target.version>
         <maven-core.version>3.3.3</maven-core.version>
         <maven-plugin-api.version>3.3.3</maven-plugin-api.version>
         <maven-plugin-annotations.version>3.4</maven-plugin-annotations.version>
@@ -227,8 +229,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>${java.source.version}</source>
+                    <target>${java.target.version}</target>
                 </configuration>
                 <executions>
                     <execution>
