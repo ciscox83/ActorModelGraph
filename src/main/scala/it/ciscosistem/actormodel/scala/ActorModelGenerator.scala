@@ -5,7 +5,6 @@ import java.net.URLClassLoader
 
 import com.typesafe.scalalogging.slf4j.Logger
 import it.ciscosistem.actormodel.java.{ActorModel, Empty}
-import it.ciscosistem.actormodel.java.Empty
 import org.clapper.classutil.ClassFinder
 import org.slf4j.LoggerFactory
 
