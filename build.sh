@@ -1,1 +1,1 @@
-mvn clean -U javadoc:jar package
+mvn clean -U javadoc:jar source:jar package
