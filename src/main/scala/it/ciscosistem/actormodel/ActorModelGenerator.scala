@@ -39,8 +39,8 @@ object ActorModelGenerator {
           runtimeClassLoader.loadClass(c.name)
         } catch {
           case e: Exception =>
-            logger.error(s"[ActorModelGenerator] Problem getting class for name: ${c.name}. Stop the game.", e)
-            throw e
+            logger.warn(s"[ActorModelGenerator] Problem getting class for name: ${c.name}. Skipping.", e)
+            classOf[Empty]
         }
         getActorModelSet(clazz)
     }.toSet.flatten
