@@ -7,7 +7,7 @@
     <name>Actor Model Graph</name>
     <description>
         Maven plugin that through some custom annotations
-        allows to generate a graphical UML representation of an application Actor model.
+        allows to generate a graphical representation of an application Actor model.
     </description>
     <url>https://github.com/ciscox83/ActorModelGraph</url>
 
